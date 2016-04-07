@@ -25,12 +25,15 @@ class MainViewController: UITabBarController {
         
         addChildViewControllers()
         
+        
         setupComposedBtn()
     }
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
+       // print(tabBar.subviews)
         tabBar.bringSubviewToFront(composedBtn)
+        
+        
     }
 
     private lazy var composedBtn :UIButton = UIButton(imageName: "tabbar_compose_icon_add", bgImageName: "tabbar_compose_button")

@@ -13,6 +13,8 @@
 		19107BA51CB601C200DFED24 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19107BA41CB601C200DFED24 /* MessageViewController.swift */; };
 		19107BA71CB601D000DFED24 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19107BA61CB601D000DFED24 /* ProfileViewController.swift */; };
 		19107BA91CB6057000DFED24 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19107BA81CB6057000DFED24 /* UIButton+Extension.swift */; };
+		19107BAB1CB616DA00DFED24 /* VisitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19107BAA1CB616DA00DFED24 /* VisitorViewController.swift */; };
+		19107BAD1CB6176E00DFED24 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19107BAC1CB6176E00DFED24 /* VisitorView.swift */; };
 		191615871CB5722C001A2DDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191615861CB5722C001A2DDD /* AppDelegate.swift */; };
 		1916158E1CB5722C001A2DDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1916158D1CB5722C001A2DDD /* Assets.xcassets */; };
 		1916159C1CB5722C001A2DDD /* JSMicroblogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1916159B1CB5722C001A2DDD /* JSMicroblogTests.swift */; };
@@ -43,6 +45,8 @@
 		19107BA41CB601C200DFED24 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		19107BA61CB601D000DFED24 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		19107BA81CB6057000DFED24 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		19107BAA1CB616DA00DFED24 /* VisitorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorViewController.swift; sourceTree = "<group>"; };
+		19107BAC1CB6176E00DFED24 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
 		191615831CB5722C001A2DDD /* JSMicroblog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSMicroblog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		191615861CB5722C001A2DDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1916158D1CB5722C001A2DDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -154,6 +158,8 @@
 		19107B981CB5F97600DFED24 /* Visitor */ = {
 			isa = PBXGroup;
 			children = (
+				19107BAA1CB616DA00DFED24 /* VisitorViewController.swift */,
+				19107BAC1CB6176E00DFED24 /* VisitorView.swift */,
 			);
 			path = Visitor;
 			sourceTree = "<group>";
@@ -367,6 +373,8 @@
 				191615871CB5722C001A2DDD /* AppDelegate.swift in Sources */,
 				19107B9D1CB5FB5B00DFED24 /* MainViewController.swift in Sources */,
 				19107BA31CB601AD00DFED24 /* HomeViewController.swift in Sources */,
+				19107BAB1CB616DA00DFED24 /* VisitorViewController.swift in Sources */,
+				19107BAD1CB6176E00DFED24 /* VisitorView.swift in Sources */,
 				19107BA51CB601C200DFED24 /* MessageViewController.swift in Sources */,
 				19107BA91CB6057000DFED24 /* UIButton+Extension.swift in Sources */,
 			);
