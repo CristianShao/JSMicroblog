@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19107B9D1CB5FB5B00DFED24 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19107B9C1CB5FB5B00DFED24 /* MainViewController.swift */; };
+		19107BA11CB6019200DFED24 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19107BA01CB6019200DFED24 /* DiscoverViewController.swift */; };
+		19107BA31CB601AD00DFED24 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19107BA21CB601AD00DFED24 /* HomeViewController.swift */; };
+		19107BA51CB601C200DFED24 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19107BA41CB601C200DFED24 /* MessageViewController.swift */; };
+		19107BA71CB601D000DFED24 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19107BA61CB601D000DFED24 /* ProfileViewController.swift */; };
+		19107BA91CB6057000DFED24 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19107BA81CB6057000DFED24 /* UIButton+Extension.swift */; };
 		191615871CB5722C001A2DDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191615861CB5722C001A2DDD /* AppDelegate.swift */; };
-		191615891CB5722C001A2DDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191615881CB5722C001A2DDD /* ViewController.swift */; };
-		1916158C1CB5722C001A2DDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1916158A1CB5722C001A2DDD /* Main.storyboard */; };
 		1916158E1CB5722C001A2DDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1916158D1CB5722C001A2DDD /* Assets.xcassets */; };
-		191615911CB5722C001A2DDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1916158F1CB5722C001A2DDD /* LaunchScreen.storyboard */; };
 		1916159C1CB5722C001A2DDD /* JSMicroblogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1916159B1CB5722C001A2DDD /* JSMicroblogTests.swift */; };
 		191615A71CB5722C001A2DDD /* JSMicroblogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191615A61CB5722C001A2DDD /* JSMicroblogUITests.swift */; };
 /* End PBXBuildFile section */
@@ -34,12 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19107B9C1CB5FB5B00DFED24 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		19107BA01CB6019200DFED24 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		19107BA21CB601AD00DFED24 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		19107BA41CB601C200DFED24 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		19107BA61CB601D000DFED24 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		19107BA81CB6057000DFED24 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		191615831CB5722C001A2DDD /* JSMicroblog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSMicroblog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		191615861CB5722C001A2DDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		191615881CB5722C001A2DDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1916158B1CB5722C001A2DDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1916158D1CB5722C001A2DDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		191615901CB5722C001A2DDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		191615921CB5722C001A2DDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		191615971CB5722C001A2DDD /* JSMicroblogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSMicroblogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1916159B1CB5722C001A2DDD /* JSMicroblogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSMicroblogTests.swift; sourceTree = "<group>"; };
@@ -74,6 +80,107 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19107B901CB5F97600DFED24 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				19107B911CB5F97600DFED24 /* Model */,
+				19107B921CB5F97600DFED24 /* Tools */,
+				19107B941CB5F97600DFED24 /* View */,
+				19107B9B1CB5F97600DFED24 /* VIewModel */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19107B911CB5F97600DFED24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		19107B921CB5F97600DFED24 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				19107B931CB5F97600DFED24 /* Extension */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		19107B931CB5F97600DFED24 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				19107BA81CB6057000DFED24 /* UIButton+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		19107B941CB5F97600DFED24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19107B951CB5F97600DFED24 /* Discover */,
+				19107B961CB5F97600DFED24 /* Home */,
+				19107B971CB5F97600DFED24 /* Main */,
+				19107B991CB5F97600DFED24 /* Message */,
+				19107B9A1CB5F97600DFED24 /* Profile */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		19107B951CB5F97600DFED24 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				19107BA01CB6019200DFED24 /* DiscoverViewController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		19107B961CB5F97600DFED24 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				19107BA21CB601AD00DFED24 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		19107B971CB5F97600DFED24 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				19107B981CB5F97600DFED24 /* Visitor */,
+				19107B9C1CB5FB5B00DFED24 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		19107B981CB5F97600DFED24 /* Visitor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Visitor;
+			sourceTree = "<group>";
+		};
+		19107B991CB5F97600DFED24 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				19107BA41CB601C200DFED24 /* MessageViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		19107B9A1CB5F97600DFED24 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				19107BA61CB601D000DFED24 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		19107B9B1CB5F97600DFED24 /* VIewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VIewModel;
+			sourceTree = "<group>";
+		};
 		1916157A1CB5722B001A2DDD = {
 			isa = PBXGroup;
 			children = (
@@ -97,11 +204,9 @@
 		191615851CB5722C001A2DDD /* JSMicroblog */ = {
 			isa = PBXGroup;
 			children = (
+				19107B901CB5F97600DFED24 /* Classes */,
 				191615861CB5722C001A2DDD /* AppDelegate.swift */,
-				191615881CB5722C001A2DDD /* ViewController.swift */,
-				1916158A1CB5722C001A2DDD /* Main.storyboard */,
 				1916158D1CB5722C001A2DDD /* Assets.xcassets */,
-				1916158F1CB5722C001A2DDD /* LaunchScreen.storyboard */,
 				191615921CB5722C001A2DDD /* Info.plist */,
 			);
 			path = JSMicroblog;
@@ -232,9 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				191615911CB5722C001A2DDD /* LaunchScreen.storyboard in Resources */,
 				1916158E1CB5722C001A2DDD /* Assets.xcassets in Resources */,
-				1916158C1CB5722C001A2DDD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +362,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				191615891CB5722C001A2DDD /* ViewController.swift in Sources */,
+				19107BA71CB601D000DFED24 /* ProfileViewController.swift in Sources */,
+				19107BA11CB6019200DFED24 /* DiscoverViewController.swift in Sources */,
 				191615871CB5722C001A2DDD /* AppDelegate.swift in Sources */,
+				19107B9D1CB5FB5B00DFED24 /* MainViewController.swift in Sources */,
+				19107BA31CB601AD00DFED24 /* HomeViewController.swift in Sources */,
+				19107BA51CB601C200DFED24 /* MessageViewController.swift in Sources */,
+				19107BA91CB6057000DFED24 /* UIButton+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,25 +402,6 @@
 			targetProxy = 191615A31CB5722C001A2DDD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		1916158A1CB5722C001A2DDD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1916158B1CB5722C001A2DDD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1916158F1CB5722C001A2DDD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				191615901CB5722C001A2DDD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		191615A91CB5722C001A2DDD /* Debug */ = {
@@ -402,10 +491,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = JSMicroblog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ASM.com.JSMicroblog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -413,10 +505,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = JSMicroblog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ASM.com.JSMicroblog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -487,6 +582,7 @@
 				191615AD1CB5722C001A2DDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		191615AE1CB5722C001A2DDD /* Build configuration list for PBXNativeTarget "JSMicroblogTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +591,7 @@
 				191615B01CB5722C001A2DDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		191615B11CB5722C001A2DDD /* Build configuration list for PBXNativeTarget "JSMicroblogUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +600,7 @@
 				191615B31CB5722C001A2DDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
