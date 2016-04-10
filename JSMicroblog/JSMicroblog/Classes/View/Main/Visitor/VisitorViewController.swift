@@ -27,6 +27,10 @@ class VisitorViewController: UITableViewController {
        // visitorView?.backgroundColor = UIColor.blueColor()
         view  = visitorView
         
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "登录", style: .Plain, target: self, action: "loginBtnClick")
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "注册", style: .Plain, target: self, action: "registerBtnClick")
+        visitorView?.registerBtn.addTarget(self, action: "registerBtnClick", forControlEvents: .TouchUpInside)
+        visitorView?.loginBtn.addTarget(self, action: "loginBtnClick", forControlEvents: .TouchUpInside)
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,4 +38,15 @@ class VisitorViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+}
+// MARK: - 监听方法
+extension VisitorViewController{
+    
+    func loginBtnClick() {
+        print("登录")
+    }
+    
+    func registerBtnClick() {
+        print("注册")
+    }
 }

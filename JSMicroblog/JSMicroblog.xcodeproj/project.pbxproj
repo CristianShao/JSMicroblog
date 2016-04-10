@@ -19,6 +19,9 @@
 		1916158E1CB5722C001A2DDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1916158D1CB5722C001A2DDD /* Assets.xcassets */; };
 		1916159C1CB5722C001A2DDD /* JSMicroblogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1916159B1CB5722C001A2DDD /* JSMicroblogTests.swift */; };
 		191615A71CB5722C001A2DDD /* JSMicroblogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191615A61CB5722C001A2DDD /* JSMicroblogUITests.swift */; };
+		1934934A1CB91F9C00CB3742 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193493491CB91F9C00CB3742 /* common.swift */; };
+		194402431CB7F366005F435A /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194402421CB7F366005F435A /* UILabel+Extension.swift */; };
+		194402451CB7F6F5005F435A /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194402441CB7F6F5005F435A /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		191615A21CB5722C001A2DDD /* JSMicroblogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSMicroblogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		191615A61CB5722C001A2DDD /* JSMicroblogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSMicroblogUITests.swift; sourceTree = "<group>"; };
 		191615A81CB5722C001A2DDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		193493491CB91F9C00CB3742 /* common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
+		194402421CB7F366005F435A /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		194402441CB7F6F5005F435A /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				19107B931CB5F97600DFED24 /* Extension */,
+				193493491CB91F9C00CB3742 /* common.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -114,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				19107BA81CB6057000DFED24 /* UIButton+Extension.swift */,
+				194402421CB7F366005F435A /* UILabel+Extension.swift */,
+				194402441CB7F6F5005F435A /* UIImageView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -370,10 +379,13 @@
 			files = (
 				19107BA71CB601D000DFED24 /* ProfileViewController.swift in Sources */,
 				19107BA11CB6019200DFED24 /* DiscoverViewController.swift in Sources */,
+				194402431CB7F366005F435A /* UILabel+Extension.swift in Sources */,
 				191615871CB5722C001A2DDD /* AppDelegate.swift in Sources */,
 				19107B9D1CB5FB5B00DFED24 /* MainViewController.swift in Sources */,
 				19107BA31CB601AD00DFED24 /* HomeViewController.swift in Sources */,
 				19107BAB1CB616DA00DFED24 /* VisitorViewController.swift in Sources */,
+				194402451CB7F6F5005F435A /* UIImageView+Extension.swift in Sources */,
+				1934934A1CB91F9C00CB3742 /* common.swift in Sources */,
 				19107BAD1CB6176E00DFED24 /* VisitorView.swift in Sources */,
 				19107BA51CB601C200DFED24 /* MessageViewController.swift in Sources */,
 				19107BA91CB6057000DFED24 /* UIButton+Extension.swift in Sources */,

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class VisitorView: UIView {
     
     //图片为可选项
@@ -56,41 +55,20 @@ class VisitorView: UIView {
     
     //MARK: -懒加载控件
     //图标
-    private lazy var iconView: UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_image_smallicon"))
+    private lazy var iconView: UIImageView = UIImageView(imgName: "visitordiscover_feed_image_smallicon")
     //遮罩图像
-    private lazy var maskIconView: UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_mask_smallicon"))
+    private lazy var maskIconView: UIImageView = UIImageView(imgName: "visitordiscover_feed_mask_smallicon")
     
     //小房子
-    private lazy var homeIconView: UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_image_house"))
+    private lazy var homeIconView: UIImageView = UIImageView(imgName: "visitordiscover_feed_image_house")
     //文字
-    private lazy var messageLabel : UILabel = {
-        let label = UILabel()
-        
-        label.text = "关注一些人，回这里看看有什么惊喜"
-        label.textColor = UIColor.darkGrayColor()
-        label.font = UIFont.systemFontOfSize(14)
-        label.numberOfLines = 0
-        label.textAlignment = NSTextAlignment.Center
-        return label
-    }()
+    private lazy var messageLabel : UILabel = UILabel(title: "关注一些人，回这里看看有什么惊喜")
     //注册按钮
-    private lazy var registerBtn :UIButton = {
-        let btn  = UIButton()
-        btn.setTitle("注册", forState: .Normal)
-        btn.setTitleColor(UIColor.orangeColor(), forState: .Normal)
-        btn.setBackgroundImage(UIImage(named: "common_button_white_disable"), forState: .Normal)
-        
-        return btn
-    } ()
+     lazy var registerBtn :UIButton = UIButton(title: "注册", size: 18, titleColor: UIColor.orangeColor(), bgImg: "common_button_white_disable")
+    
     //登录按钮
-    private lazy var loginBtn :UIButton = {
-        let btn  = UIButton()
-        btn.setTitle("登录", forState: .Normal)
-        btn.setTitleColor(UIColor.darkGrayColor(), forState: .Normal)
-        btn.setBackgroundImage(UIImage(named: "common_button_white_disable"), forState: .Normal)
-        
-        return btn
-    } ()
+    lazy var loginBtn :UIButton = UIButton(title: "登录", size: 18, titleColor: UIColor.darkGrayColor(), bgImg: "common_button_white_disable")
+    
 }
 
 extension VisitorView{

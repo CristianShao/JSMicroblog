@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        setupAppearance()
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.rootViewController = MainViewController()
@@ -22,6 +23,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         
         return true
+    }
+    
+    func setupAppearance(){
+            UINavigationBar.appearance().tintColor = WBAppearanceTintColor
+            UITabBar.appearance().tintColor = WBAppearanceTintColor
+        
     }
 
     func applicationWillResignActive(application: UIApplication) {
