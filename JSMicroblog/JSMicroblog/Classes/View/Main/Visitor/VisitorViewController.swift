@@ -37,13 +37,14 @@ class VisitorViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }
 // MARK: - 监听方法
 extension VisitorViewController{
     
     func loginBtnClick() {
-        print("登录")
+        let oauth = OAuthViewController()
+        let nav = UINavigationController(rootViewController: oauth)
+        presentViewController(nav, animated: true , completion: nil )
     }
     
     func registerBtnClick() {
