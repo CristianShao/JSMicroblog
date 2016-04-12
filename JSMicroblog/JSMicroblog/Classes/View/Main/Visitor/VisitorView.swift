@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SnapKit
+
 class VisitorView: UIView {
     
     //图片为可选项
@@ -87,34 +89,43 @@ extension VisitorView{
         
         
         //图标的约束
-        addConstraint(NSLayoutConstraint(item: iconView, attribute: .CenterX, relatedBy: .Equal, toItem: self, attribute: .CenterX, multiplier: 1.0, constant: 0))
-        addConstraint(NSLayoutConstraint(item: iconView, attribute: .CenterY, relatedBy: .Equal, toItem: self, attribute: .CenterY, multiplier: 1.0, constant: -60))
+        iconView.snp_makeConstraints { (make) -> Void in
+            make.centerX.equalTo(self.snp_centerX)
+            make.centerY.equalTo(self.snp_centerY).offset(-60)
+        }
         //小房子的约束
-        addConstraint(NSLayoutConstraint(item: homeIconView, attribute: .CenterX, relatedBy: .Equal, toItem: iconView, attribute: .CenterX, multiplier: 1.0, constant: 0))
-        addConstraint(NSLayoutConstraint(item: homeIconView, attribute: .CenterY, relatedBy: .Equal, toItem: iconView, attribute: .CenterY, multiplier: 1.0, constant: 0))
+        homeIconView.snp_makeConstraints { (make) -> Void in
+            make.center.equalTo(iconView.snp_center)
+        }
         //消息文字
-        addConstraint(NSLayoutConstraint(item: messageLabel, attribute: .CenterX, relatedBy: .Equal, toItem: iconView, attribute: .CenterX, multiplier: 1.0, constant: 0))
-        addConstraint(NSLayoutConstraint(item: messageLabel, attribute: .Top
-            , relatedBy: .Equal, toItem: iconView, attribute: .Bottom, multiplier: 1.0, constant: 16))
-        addConstraint(NSLayoutConstraint(item: messageLabel, attribute: .Width, relatedBy: .Equal, toItem: nil , attribute: .NotAnAttribute, multiplier: 1.0, constant: 224))
-        addConstraint(NSLayoutConstraint(item: messageLabel, attribute: .Height, relatedBy: .Equal, toItem: nil , attribute: .NotAnAttribute, multiplier: 1.0, constant: 36))
+        messageLabel.snp_makeConstraints { (make) -> Void in
+            make.centerX.equalTo(iconView.snp_centerX)
+            make.top.equalTo(iconView.snp_bottom).offset(16)
+            make.width.equalTo(224)
+            make.height.equalTo(36)
+        }
         //注册按钮
-        addConstraint(NSLayoutConstraint(item: registerBtn, attribute: .Left
-            , relatedBy: .Equal, toItem: messageLabel, attribute: .Left, multiplier: 1.0, constant: 0))
-        addConstraint(NSLayoutConstraint(item: registerBtn, attribute: .Top
-            , relatedBy: .Equal, toItem: messageLabel, attribute: .Bottom, multiplier: 1.0, constant: 16))
-        addConstraint(NSLayoutConstraint(item: registerBtn, attribute: .Width, relatedBy: .Equal, toItem: nil , attribute: .NotAnAttribute, multiplier: 1.0, constant: 100))
-        addConstraint(NSLayoutConstraint(item: registerBtn, attribute: .Height, relatedBy: .Equal, toItem: nil , attribute: .NotAnAttribute, multiplier: 1.0, constant: 36))
+        registerBtn.snp_makeConstraints { (make) -> Void in
+            make.left.equalTo(messageLabel.snp_left)
+            make.top.equalTo(messageLabel.snp_bottom).offset(16)
+            make.width.equalTo(100)
+            make.height.equalTo(36)
+        }
+    
         //登录按钮
-        addConstraint(NSLayoutConstraint(item:loginBtn, attribute: .Right
-            , relatedBy: .Equal, toItem: messageLabel, attribute: .Right, multiplier: 1.0, constant: 0))
-        addConstraint(NSLayoutConstraint(item: loginBtn, attribute: .Top
-            , relatedBy: .Equal, toItem: messageLabel, attribute: .Bottom, multiplier: 1.0, constant: 16))
-        addConstraint(NSLayoutConstraint(item: loginBtn, attribute: .Width, relatedBy: .Equal, toItem: nil , attribute: .NotAnAttribute, multiplier: 1.0, constant: 100))
-        addConstraint(NSLayoutConstraint(item: loginBtn, attribute: .Height, relatedBy: .Equal, toItem: nil , attribute: .NotAnAttribute, multiplier: 1.0, constant: 36))
+        loginBtn.snp_makeConstraints { (make) -> Void in
+            make.right.equalTo(messageLabel.snp_right)
+            make.top.equalTo(registerBtn.snp_top)
+            make.size.equalTo(registerBtn.snp_size)
+        }
         //遮罩图像
-        addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-0-[mask]-0-|", options: [], metrics: nil , views: ["mask": maskIconView]))
-        addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-0-[mask]-(height)-[registerBtn]", options: [], metrics: ["height": -36], views: ["mask":maskIconView, "registerBtn":registerBtn]))
+        maskIconView.snp_makeConstraints { (make) -> Void in
+            make.left.equalTo(self.snp_left)
+            make.right.equalTo(self.snp_right)
+            make.top.equalTo(self.snp_top)
+            make.bottom.equalTo(registerBtn.snp_bottom)
+        }
+
         
         backgroundColor = UIColor(white: 237.0/255.0, alpha: 1.0)
     }

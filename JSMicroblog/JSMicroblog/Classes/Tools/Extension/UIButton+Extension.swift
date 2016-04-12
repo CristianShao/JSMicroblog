@@ -29,7 +29,7 @@ extension UIButton{
         if let backgroundImage = bgImg {
             setBackgroundImage(UIImage(named: backgroundImage), forState: .Normal)
         }
-        
+        sizeToFit()
     }
     
     

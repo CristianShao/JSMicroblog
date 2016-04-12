@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setupAppearance()
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window?.rootViewController = MainViewController()
+        window?.rootViewController = NewFeatureViewController()
         window?.backgroundColor = UIColor.whiteColor()
         window?.makeKeyAndVisible()
         
