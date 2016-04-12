@@ -29,11 +29,35 @@ class NetworkTools: AFHTTPSessionManager {
         return instance
         
     }()
+    
+    //返回Token的字典
+    private var accessTokenDict: [String :AnyObject]?{
+        if let token  = UserAccountViewModel.sharedAccount.token{
+            return ["access_token" : token]
+        }
+     return nil
+    }
+}
+// MARK: - 用户相关方法
+extension NetworkTools{
+    //加载用户信息
+    func loadUserInfo(uid: String, finished :JSRequestCallBack){
+        
+        guard var  params = accessTokenDict else{
+            
+            finished(success: nil, error: NSError(domain: "cn.itcast.error", code: -11, userInfo: ["message" :"token为空"]))
+            return
+        }
+        
+        let urlStr = "https://api.weibo.com/2/users/show.json"
+        
+         params["uid"]  = uid
+        request(.GET, urlString: urlStr, params: params, finished: finished)
+    }
 }
 
 // MARK: - OAuth相关
 extension NetworkTools {
-    
     var oauthURL: NSURL {
         let urlStr = "https://api.weibo.com/oauth2/authorize?client_id=\(appKey)&redirect_uri=\(redirectID)"
         

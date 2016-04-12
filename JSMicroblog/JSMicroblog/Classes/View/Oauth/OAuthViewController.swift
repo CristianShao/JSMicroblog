@@ -51,27 +51,18 @@ extension OAuthViewController :UIWebViewDelegate{
         guard let url = request.URL where url.host == "www.baidu.com" else{
             return true
         }
-        
         guard let query = url.query where query.hasPrefix("code=") else {
             return false
         }
-        
         let code = query.substringFromIndex("code=".endIndex)
         
-        NetworkTools.sharedTools.loadAcessToken(code) { (success, error) -> () in
-            if error != nil {
-                print(error)
-                return
+        UserAccountViewModel.sharedAccount.loadAccessToken(code) { (isSuccessed) -> () in
+            if isSuccessed{
+                print("OK")
+                print(UserAccountViewModel.sharedAccount.account)
+            }else{
+                print("NO")
             }
-            print(success)
-            let   acsToken  = success!["access_token"]
-            NetworkTools.sharedTools.loadData(acsToken as! String, finished: { (success, error) -> () in
-                print(success)
-                
-            })
-            self.dismissViewControllerAnimated(true, completion: { () -> Void in
-                        
-            })
         }
         return false
     }
