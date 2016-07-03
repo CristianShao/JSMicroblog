@@ -1,2 +1,2 @@
-# JSMicroblog
-a microBlog created by swift..
+# JSNewsView
+a newsView demo created by swift..
